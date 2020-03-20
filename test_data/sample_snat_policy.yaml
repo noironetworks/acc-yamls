@@ -1,0 +1,11 @@
+apiVersion: aci.snat/v1
+kind: SnatPolicy
+metadata:
+  name: test-snatpolicysystem
+spec:
+  snatIp:
+    -  10.3.50.50/32
+  selector:
+    namespace: default
+    labels:
+      test: sample-snatpolicy

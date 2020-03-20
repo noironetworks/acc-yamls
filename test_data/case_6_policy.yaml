@@ -1,0 +1,10 @@
+apiVersion: aci.snat/v1
+kind: SnatPolicy
+metadata:
+  name: case6-snatpolicy
+spec:
+  snatIp:
+    -  10.3.65.50/32
+  selector:
+    labels:
+      test: case6-policy

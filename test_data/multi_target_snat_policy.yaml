@@ -1,0 +1,11 @@
+apiVersion: aci.snat/v1
+kind: SnatPolicy
+metadata:
+  name: multi-target-snatpolicy
+spec:
+  snatIp:
+    -  10.3.99.99/32
+  selector:
+    namespace: default
+    labels:
+      test: mt-snatpolicy

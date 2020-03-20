@@ -1,0 +1,7 @@
+apiVersion: aci.snat/v1
+kind: SnatPolicy
+metadata:
+  name: case26-cluster-snatpolicy
+spec:
+  snatIp:
+    -  10.3.203.203/32
